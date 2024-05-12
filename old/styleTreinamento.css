@@ -1,0 +1,457 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+
+/* font-family: 'Rubik', sans-serif; */
+
+/*Fontes*/
+
+html {
+    font-size: 100%;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+}
+
+#sobreTelaInicial {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(117, 117, 117, 0.404);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.opc0 {
+    opacity: 0;
+}
+
+.box {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.889);
+    height: 200px;
+    border-radius:10px;
+    box-shadow: 0px 10px 15px rgb(76, 76, 76);
+}
+
+.boxTop {
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    color: #204b63;
+    display: flex;
+}
+
+.boxTop1 {
+    width: 100%;
+    text-align: center;
+}
+
+.boxTop1 img{
+    margin-top: 40px;
+}
+
+.boxTop1 h1 {
+    transform: translateY(30px);
+}
+
+.boxBot {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxBot button {
+    background-color: rgb(219, 218, 218);
+    width: 120px;
+    height: 25px;
+    color: #204b63;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.boxBot button:hover {
+    transition: .3s;
+    color: white;
+    background-color: rgb(70, 199, 238);
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.445);
+    font-weight: bolder;
+}
+
+/*Aqui começa a estilização da tag Header*/
+header {
+    background-color: rgb(70, 199, 238);
+    height: 90px;
+    width: 100vw;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.274);
+}
+
+#containerHeader {
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#containerHeader img {
+    width: 150px;
+    padding-right: 20px;
+}
+
+.divHeaderLeft, .divHeaderRight {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.divHeaderLeft {
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem;
+    color: white;
+}
+
+.divHeaderRight {
+    justify-content: space-between;
+}
+
+.divHeaderRight a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    background-color: rgb(102, 219, 24);
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    transition: .3s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+.divHeaderRight a:hover {
+    transform: scale(1.05, 1.05);
+    padding: 11px 15px;
+    transition: .3s;
+    border-radius: 23px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.418);
+}
+
+/*Aqui termina a estilização da tag Header*/
+
+
+/*Aqui começa a estilização da tag Main*/
+
+main {
+    width: 100vw;
+    height: calc(100vh - 160px);
+    display: flex;
+}
+
+#containerLogo {
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    display: none;
+}
+
+#containerLogo img {
+    width: 80px;
+}
+
+#containerMain {
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hifaLogo {
+    margin: auto;
+    width: 130px;
+}
+
+.divMain {
+    width: 50%;
+    height: 450px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.24);
+}
+
+.divMain.left {
+    margin: 0px 10px 0px 0px;
+}
+.divMain.right {
+    margin: 0px 0px 0px 10px;
+}
+
+
+.divTextAside {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    color: #204b63;
+}
+
+.divBlockAside {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.collumLinks {
+    width: 50%;
+    height: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+.containerLink {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.linkSistema {
+    text-decoration: none;
+    width: 80%;
+    display: flex;
+    color: black;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.linkSistema:hover {
+    transition: .3s;
+    color: white;
+    background-color: rgb(70, 199, 238);
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.445);
+    font-weight: bolder;
+}
+
+.linkSistema img {
+    width: 28px;
+    height: 28px;
+    margin: 0px 10px;
+}
+
+.linkSistema p {
+    width: 80%;
+    text-decoration: none;
+}
+
+#divBlock2 {
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+#divBlock2:hover {
+    transition: .3s;
+    transform: translateY(-7px);
+
+}
+
+.contentArticle {
+    width: 80%;
+    height: 310px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 8px 15px rgb(92, 92, 92);
+}
+
+.divBlockAside article {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0px -60px 60px -20px inset black;
+}
+
+.divBlockAside article img {
+    position: absolute;
+    height: 120%;
+    z-index: -1;
+}
+
+.divArticleBot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.divArticleBot p {
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    padding: 0px 20px 0px 20px;
+}
+
+/*Aqui termina a estilização da tag Main*/
+
+/*Aqui começa a estilização da tag Footer*/
+
+footer {
+    background-color: rgb(70, 199, 238);
+    height: 70px;
+    width: 100vw;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#containerFooter {
+    max-width: 1400px;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: .95rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#containerFooter img {
+    width: 150px;
+    transform: translateY(-5px);
+}
+
+span {
+    padding: 0px 10px;
+}
+
+
+/*Responsivo*/
+
+@media (max-width: 900px) {
+    main {
+        display: flex;
+    }
+
+    #containerLogo {
+        display: none;
+    }
+
+    .divMain {
+        height: 400px;
+    }
+
+    .divTextAside {
+        font-size: 0.75rem;
+        height: 10%;
+    }
+
+    .containerLink {
+        height: 25px;
+        margin: 12px 0px 12px 0px;
+    }
+
+    .linkSistema {
+        font-size: .95rem;
+    }
+
+    .divMain {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media (max-height: 730px) {
+    main {
+        display: flex;
+    }
+
+    #containerLogo {
+        display: none;
+    }
+
+    .divMain {
+        height: 400px;
+    }
+
+    .divTextAside {
+        font-size: 0.75rem;
+        height: 10%;
+    }
+
+    .containerLink {
+        height: 25px;
+        margin: 12px 0px 12px 0px;
+    }
+
+    .linkSistema {
+        font-size: .95rem;
+    }
+
+    .divMain {
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+}

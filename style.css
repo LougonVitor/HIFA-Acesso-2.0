@@ -1,0 +1,477 @@
+/*Fontes*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+:root {
+    --azul-hifa: #2A82B9;
+    --verde-hifa: #B0D575;
+    --azul-esverdeado-hifa: #A5D7D5;
+    --branco-transparente: #ffffffd8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Fontes*/
+
+/*ESTILIZAÇÃO SOBRE TELA INICIAL*/
+#sobreTelaInicial {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(117, 117, 117, 0.404);
+    z-index: 1500;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.opc0 {
+    opacity: 0;
+}
+
+.opc02 {
+    opacity: 0.2;
+}
+
+.box {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.889);
+    height: 450px;
+    border-radius:10px;
+    box-shadow: 0px 10px 15px rgb(76, 76, 76);
+}
+
+
+.boxTop {
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    color: #204b63;
+    display: flex;
+}
+
+.boxTop1 {
+    width: 100%;
+    text-align: center;
+}
+
+.boxTop1 img{
+    margin-top: 0px;
+    transform: translateY(65px);
+}
+
+.aviso {
+    animation: alertaCent 1s infinite linear;
+}
+
+@keyframes alertaCent {
+    0% {
+        color: #204b63;
+    } 50% {
+        color: red;
+        transform: scale(1.2);
+    } 100% {
+        color: #204b63;
+    }
+}
+
+.segundoH1 {
+    transform: translateY(70px);
+}
+
+.boxTop1 h2 {
+    padding-bottom: 50px;
+    transform: translateY(0px);
+}
+
+.boxBot {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxBot button {
+    background-color: rgb(219, 218, 218);
+    width: 120px;
+    height: 25px;
+    color: #204b63;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.boxBot button:hover {
+    transition: .3s;
+    color: white;
+    background-color: rgb(70, 199, 238);
+    transform: scale(1.05);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.445);
+    font-weight: bolder;
+}
+/*FIM ESTILIZAÇÃO SOBRE TELA INICIAL*/
+
+
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(237,244,249);
+    font-size: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#glpi-sub-link,
+#cardapio-sub-link {
+    display: none;
+}
+
+header {
+    /*background-color: var(--azul-hifa);*/
+    height: 60px;
+    width: 100vw;
+}
+
+.containerSections {
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+}
+
+.containerSections.header {
+    display: flex;
+    height: 100%;
+}
+
+.boxHeader {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.boxHeader.esquerdo {
+    width: 30%;
+}
+
+.boxHeader.esquerdo img {
+    width: 120px;
+    border-radius: 2px;
+}
+
+.boxHeader.esquerdo h1 {
+    padding: 0px 0px 0px 20px;
+}
+
+.boxHeader.direito  {
+    width: 70%;
+    position: relative;
+}
+
+.boxHeader.direito nav {
+    width: 100%;
+    position: relative;
+}
+
+.boxHeader.direito ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    right: 0;
+}
+
+.boxHeader.direito li {
+    list-style: none;
+}
+
+.espaçadorLink {
+    margin: 0px 20px;
+}
+
+.linkPadrão {
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    background-color: var(--verde-hifa);
+    transition: .3s;
+    border-radius: 2px;
+    font-weight: bolder;
+}
+
+.linkPadrão:hover {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+    color: white;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.445);
+    transition: .3s;
+}
+
+.menuEscondido {
+    padding: 10px 20px;
+    background-color: var(--azul-hifa);
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+    z-index: 1000;
+    justify-content: center;
+    display: none;
+}
+
+.menuEscondido a {
+    margin: 10px 0px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    border-radius: 2px;
+    color: white;
+    height: 32px;
+    font-weight: bolder;
+    transition: .3s;
+    align-items: center;
+    font-size: 14px;
+    background-color: var(--azul-esverdeado-hifa);
+}
+
+.menuEscondido a:hover {
+    background-color: var(--verde-hifa);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.445);
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.menuEscondido a img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+
+
+
+
+#bannerFiquePorDentro {
+    height: 320px;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    color: white;
+    display: flex;
+    background-image: url(imgs/banner-medico-com-bebe.jpg);
+    background-position: 0px -220px;
+    background-size: cover;
+    background-repeat: no-repeat;;
+}
+
+.imagemBanner {
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-250px) scale(1.05);
+    filter: blur(5px);
+}
+
+#slide {
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    animation: slide 18s infinite;
+}
+
+.tituloSlide {
+    padding: 0px 0px 20px 0px;
+}
+
+.boxSlide {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+.centralizador {
+    margin: auto;
+}
+
+#ultimoH1 {
+    padding: 0px 0px 0px 0px;
+}
+
+.boxSlide.três img {
+    width: 150px;
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0vw);
+    } 30% {
+        transform: translateX(0vw);
+    } 35% {
+        transform: translateX(-100vw);
+    } 65% {
+        transform: translateX(-100vw);
+    } 70% {
+        transform: translateX(-200vw);
+    } 95% {
+        transform: translateX(-200vw);
+    } 100% {
+        transform: translateX(0vw);
+    }
+}
+
+.containerAcessosSistemas {
+    max-width: 1400px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containerAcessosSistemas.TI, .qualidade {
+    justify-content: left;
+}
+
+.containerAcessosSistemas H1 {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 25px 0px 25px 10px;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.438);
+    color: #204b63;
+    margin-top: 20px;
+}
+
+.boxLink {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--azul-hifa);
+    text-align: center;
+    transition: .2s;
+    font-weight: bolder;
+    margin: 25px 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.141);
+    font-size: .9rem;
+}
+
+.boxLink div {
+    width: 100%;
+}
+
+.boxLink:hover  {
+    transform: scale(1.03);
+    transition: .1s;
+    box-shadow: 5px 5px 7px rgba(128, 128, 128, 0.415);
+}
+
+/*.boxLink img {
+    width: 40px;
+}*/
+
+@media (max-width: 1300px) {
+    #bannerFiquePorDentro {
+        background-position: 0px -120px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .boxLink {
+        width: 100px;
+        height: 100px;
+        font-size: 14px;
+    }
+
+    .boxLink img {
+        width: 55px;
+    }
+
+    #bannerFiquePorDentro {
+        background-position: 0px;
+    }
+    
+    #glpi-sub-link,
+    #cardapio-sub-link {
+        display: flex;
+    }
+    #glpi-link,
+    #cardapio-link {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    html {
+        font-size: 80%;
+    }
+    .boxLink {
+        width: 90px;
+        height: 90px;
+        font-size: 12px;
+    }
+
+    .boxLink img {
+        width: 45px;
+    }
+
+    .imagemBanner {
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        transform: translateY(-50px) scale(1.05);
+        filter: blur(5px);
+    }
+}
+
+@media (max-width: 600px) {
+    .espaçadorLink.Hifa {
+        display: none;
+    }
+
+    .imagemBanner {
+        width: 120vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .boxLink {
+        width: 80px;
+        height: 80px;
+        font-size: 10px;
+    }
+
+    #containerAcessosSistemas {
+        justify-content: center;
+    }
+
+    .imagemBanner {
+        width: 130vw;
+    }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="imgs/mvLogo.png" type="image/x-icon">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- fontes -->
+
+    <title>Soul Mv</title>
+</head>
+<body>
+
+<!--     seção onde fica a tela de aviso caso o user não esteja usando centBrowser -->
+    <section id="sobreTelaInicial">
+        <div class="box">
+            <div class="boxTop">
+                <div class="boxTop1">
+                    <h1 class="aviso">Aviso!</h1>
+                    <h2>Você não está utilizando o CentBrowser como navegador, algumas funcionalides podem ficar indisponíveis.</h2>
+                    <h1 class="segundoH1">Aos agradecimentos</h1>
+                    <img src="imgs/logo_TI_Hifa_SobreTelaInicial.png" alt="">
+                </div>
+            </div>
+            <div class="boxBot">
+                <button id="buttonExit">Fechar</button>
+            </div>
+        </div>
+    </section>
+<!--    fim da seção onde fica a tela de aviso caso o user não esteja usando centBrowser-->
+    <header>
+        <section id="containerHeader">
+            <div class="divHeaderLeft">
+                <img src="imgs/hifaLogo.png" alt="Logo da empresa Mv Sistemas" class="imgLogoHeader">
+                <h1>Soul Mv Produção</h1>
+            </div>
+            <div class="divHeaderRight">
+                <div class="separador"></div> <!-- essa div da a funcionalidade para o space-between -->
+                <div class="boxMenu">
+                    <a href="http://hifa.org.br/" target="_blank" class="linkMenu">VISITE O HIFA</a>
+                    <a href="http://intranet/" target="_blank" class="linkMenu">INTRANET</a>
+                    <div class="menuLateral">
+                        <p class="acesso" id="acesso" onclick="aparecer()">MAIS SISTEMAS</p>
+                        <div class="contentMenuLateral opc0" id="menu_Lateral">
+                            <div class="containerLinkMenuLateral">
+                                <a href="http://10.0.20.26/mveditor" class="linkSistemaMenu" target="_self">
+                                    <img src="icons/editorIco.png" alt="Logo PORTAL DE LAUDOS do Sistema Soul Mv" class="imgMenuLateral">
+                                    <p>MV EDITOR</p>
+                                </a>
+                            </div>
+                            <div class="containerLinkMenuLateral">
+                                <a href="http://10.0.20.26/report-designer" class="linkSistemaMenu" target="_self">
+                                    <img src="icons/test.png" alt="Logo PORTAL DE LAUDOS do Sistema Soul Mv" class="imgMenuLateral">
+                                    <p>REPORT DESIGNER</p>
+                                </a>
+                            </div>
+                            <div class="containerLinkMenuLateral">
+                                <a href="http://10.0.20.26/mvgestorfluxo" class="linkSistemaMenu" target="_self">
+                                    <img src="icons/gestorFluxo.png" alt="Logo PORTAL DE LAUDOS do Sistema Soul Mv" class="imgMenuLateral">
+                                    <p>GESTOR DE FLUXO</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="containerMain">
+
+            <div class="divMain left">
+                <div class="divTextAside">
+                    <h1>Escolha o Sistema Desejado!</h1>
+                </div>
+                <div class="divBlockAside">
+                    <nav>
+                        <div class="containerLink">
+                            <a href="http://10.0.20.26/soul-mv" class="linkSistema" target="_self">
+                                <img src="icons/sacrIco.png" alt="Logo MVSOUL do Sistema Soul Mv">
+                                <p>SOUL MV</p>
+                            </a>
+                        </div>
+                        <div class="containerLink">
+                            <a href="http://10.0.20.26/mvpep" class="linkSistema" target="_self">
+                                <img src="icons/pepIco.png" alt="Logo PEP do Sistema Soul Mv">
+                                <p>PEP</p>
+                            </a>
+                        </div>
+                        <div class="containerLink">
+                            <a href="http://10.0.20.26/mvsacr" class="linkSistema" target="_self">
+                                <img src="icons/paguIco.png" alt="Logo CLASSIFICAÇÃO DE RISCO do Sistema Soul Mv">
+                                <p>SACR</p>
+                            </a>
+                        </div>
+                        <div class="containerLink">  
+                            <a href="http://10.0.20.26/mvpainelrecepcao" class="linkSistema" target="_self">
+                                <img src="icons/painelRecepIco.png" alt="Logo PAINEL RECEPÇÃO do Sistema Soul Mv">
+                                <p>PAINEL RECEPÇÃO</p>
+                            </a>
+                        </div>
+                        <div class="containerLink">
+                            <a href="http://10.0.20.26/mvpainel" class="linkSistema" target="_self">
+                                <img src="icons/painelIco.png" alt="Logo PAINEL do Sistema Soul Mv">
+                                <p>PAINEL</p>
+                            </a>
+                        </div>
+                        <div class="containerLink">
+                            <a href="http://10.0.20.26/mvportaria" class="linkSistema" target="_self">
+                                <img src="icons/gestorIco.png" alt="Logo GESTOR DE FLUXO do Sistema Soul Mv">
+                                <p>PORTARIA</p>
+                            </a>
+                        </div>
+                        <div class="containerLink">
+                            <a href="http://10.0.20.26/mvtotemsenha" class="linkSistema" target="_self">
+                                <img src="icons/senhaIco.png" alt="Logo TOTEM SENHA do Sistema Soul Mv">
+                                <p>TOTEM SENHA</p>
+                            </a>
+                        </div>
+                        <div class="containerLink">
+                            <a href="http://10.0.20.29/portal-laudos" class="linkSistema" target="_self">
+                                <img src="icons/laudosIco.png" alt="Logo PORTAL DE LAUDOS do Sistema Soul Mv">
+                                <p>PORTAL LAUDOS</p>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="divMain right">
+                <div class="divTextAside">
+                    <h1>Fique por Dentro!</h1>
+                </div>
+                <div class="divBlockAside right" id="divBlock2">
+                    <div class="boxSlide">
+                        <div class="boxImgsSlides" id="slide1">
+                            <img src="imgs/slideHIFA.png" alt="">
+                            <p>Seja bem-vindo(a)!</p>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="boxImgsSlides" id="slide2">
+                            <img src="imgs/slideTI.png" alt="">
+                            <p>Dúvidas? Acione a TI: 5641</p>
+                            <div class="shadow"></div>
+                        </div>
+                        <div class="boxImgsSlides" id="slide3">
+                            <img src="imgs/fundoMain.jpg" alt="">
+                            <p>Aos agradecimentos,ㅤ<img src="imgs/logo_TI_Hifa.svg" alt=""></p>
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="containerFooter">
+            <img src="imgs/logo_TI_Hifa.svg" alt="Logo T.I do Hospital Infantil Franciso de Assís">
+        </section>
+    </footer>
+
+<!--script -->
+    <script src="scriptVT.js"></script>
+<!--script -->   
+</body>
+</html>
